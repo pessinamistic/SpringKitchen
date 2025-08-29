@@ -1,10 +1,8 @@
 /* (C) Lucipurr 69@420 */
 package com.lucipurr.config;
 
-import com.lucipurr.config.zookeeper.ZKWatcherCallBack;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableMBeanExport;
@@ -55,9 +53,6 @@ public class ConfigFactory {
 
   @Value("${uri:#{null}}")
   private String uri;
-
-  @Autowired(required = false)
-  private ZKWatcherCallBack zkWatcher;
 
   //  @Autowired(required = false)
   //  private ZookeeperServiceRegistry serviceRegistry;

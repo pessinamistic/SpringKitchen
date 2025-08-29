@@ -105,7 +105,7 @@
               <content>/* (C) Lucipurr 69@420 */</content>
             </licenseHeader>
           </java>
-          <!--                    <ratchetFrom>origin/main</ratchetFrom>-->
+          <ratchetFrom>origin/main</ratchetFrom>
           <pom>
             <includes>
               <include>pom.xml</include>

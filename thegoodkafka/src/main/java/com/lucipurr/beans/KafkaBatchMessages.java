@@ -2,10 +2,5 @@
 package com.lucipurr.beans;
 
 import java.util.List;
-import lombok.Data;
 
-@Data
-public class KafkaBatchMessages {
-  private long messageCount;
-  private List<KafkaMessage> messages;
-}
+public record KafkaBatchMessages(long messageCount, List<KafkaMessageRecord> messages) {}
